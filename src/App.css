@@ -1,17 +1,20 @@
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+body {
   background-image: url(https://steamuserimages-a.akamaihd.net/ugc/803243228399166960/3E18437D743F83B47BF89D531C8F766C1DE9D368/);
   background-color: #2d2d2d;
   background-blend-mode: soft-light;
 }
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   width: 450px;
-  display: block;
   margin: auto;
   max-width: 450px;
+  position: absolute;
+  left: 5%;
+  top: 10%;
 }
 .top-text,
 .bottom-text {
@@ -26,13 +29,44 @@
   overflow: hidden;
   font-family: "Londrina Solid", cursive;
 }
+.images {
+  width: 60%;
+  max-width: 75%;
+  margin: auto;
+  height: 635px;
+  max-height: 635px;
+  position: absolute;
+  right: 0.5%;
+  top: 15%;
+}
+.imageMeme {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: left;
+  margin: 0 25px 3px;
+  display: inline-flex;
+  transition: width 2s, height 2s;
+}
+
+.imageMeme:hover {
+  width: 128px;
+  height: 150px;
+}
 .top-text {
   top: 0;
 }
 .bottom-text {
   bottom: 0;
 }
-
+.App p {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  top: 100%;
+  font-size: 25px;
+  color: white;
+}
 .title {
   color: white;
   text-align: center;
@@ -53,5 +87,5 @@
   font-size: 20px;
   margin-bottom: 10px;
   padding: 5px;
-  width: 450px;
+  width: 438px;
 }
